@@ -39,6 +39,7 @@ function generadePostsHTML(i) {
     `;
 }
 
+
 function generadeRecommendatiosHTML() {
     return `
             <div class="recommend__info">
@@ -55,6 +56,7 @@ function renderRecommendations() {
         recommend.innerHTML += generadeRecommendatiosHTML();
     }
 }
+
 
 function renderPosts() {
     const post = document.getElementById('posts');
@@ -106,6 +108,7 @@ function generadeCommentsHTML(number) {
     `;
 }
 
+
 function renderComments(number) {
     const show = document.querySelector('.post__comments');
 
@@ -117,6 +120,7 @@ function renderComments(number) {
 
     showComment(number);
 }
+
 
 function closeComments() {
     const show = document.querySelector('.post__comments');

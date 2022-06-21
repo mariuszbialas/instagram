@@ -5,7 +5,7 @@ const posts = [
         picture: 'img/bild-1.jpeg',
         likes_count: 8111,
         date: '2022-06-14',
-        comment: ['gute nachricht!', 'perfekt!', 'gute idee'],
+        comment: ['gute nachricht!', 'perfekt!', 'gute idee 😀'],
     },
     {
         logo: '',
