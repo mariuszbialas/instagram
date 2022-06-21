@@ -1,4 +1,3 @@
-
 function generadePostsHTML(i) {
     const post = posts[i];
 

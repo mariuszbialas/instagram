@@ -69,7 +69,6 @@ const posts = [
         likes_count: 8111,
         date: '2022-02-28',
         comment: ['gute nachricht!', 'perfekt!', 'gute idee'],
-
     },   
     {
         logo: '',
