@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.bgc-gray {
+    opacity: 1;
+}
+
+/* section HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border-bottom: 2px solid #ddd;
+    background-color: #fff;
+    z-index: 3;
+}
+
+header>input {
+    height: 40px;
+    background-color: #eee;
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 0 1rem;
+}
+
+.header__icons>img {
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 5px;
+}
+
+
+
+main {
+    position: relative;
+    top: 80px;
+    width: 820px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+
+/* section RECOMMENDATIONS */
+.user-account {
+    position: fixed;
+    top: 100px;
+    display: block;
+    right: calc((100vw - 820px) / 2);
+    width: calc(820px - 500px);
+    height: 500px;
+    font-size: 14px;
+}
+
+.user-account__info img {
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.user-account__info span {
+    line-height: 50px;
+}
+
+.user-account__info p {
+    color: #999;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+#recommend div {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+#recommend button {
+    border-color: transparent;
+    background-color: transparent;
+    color: rgb(0, 149, 246);
+    font-size: 14px;
+}
+
+.recommend__user-konto {
+    margin-bottom: 2rem;
+}
+
+.recommend__user-konto img {
+    width: 60px;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.recommend__info {
+    justify-content: space-between;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.recommend__info div {
+    width: 30px;
+    height: 30px;
+    margin-left: .5rem;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+}
+
+.recommend__info span {
+    width: 60%;
+}
+
+.recommend__info span:hover {
+    text-decoration: underline;
+}
+
+
+/* section POSTS */
+.post {
+    width: 470px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
+}
+
+.post>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__user-name {
+    justify-content: flex-start !important;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.user-name__logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+}
+
+.post__title {
+    margin-right: 10px;
+}
+
+.post__title-width {
+    width: 90%;
+}
+
+.post__text {
+    color: #000;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.post__text-link {
+    cursor: pointer;
+}
+
+.post__text-link:hover {
+    text-decoration: underline;
+}
+
+.post__icons {
+    display: flex;
+    margin: 10px;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.post__input-comment {
+    padding: 15px 10px;
+    border-color: transparent;
+    width: 95%;
+}
+
+.post__input-comment img {
+    width: 24px;
+}
+
+.post__input-comment input {
+    width: 65%;
+    font-size: 14px;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    border-color: transparent;
+}
+
+.post__input-comment input:hover button {
+    color: #000;
+}
+
+.post__input-comment button {
+    width: 20%;
+    font-size: 14px;
+    padding: 0 10px;
+    color: rgb(0, 149, 246);
+    border-color: transparent;
+    opacity: .5;
+}
+
+.post__comments {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    width: 90vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1000vmax rgba(0 0 0 / .8);
+    z-index: 3;
+}
+
+
+.post__comments>p {
+    position: absolute;
+    top: -80px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.post__comments-pic {
+    border-radius: 10px 0 0 10px;
+    width: 60%;
+    background: #000;
+}
+
+.post__comments-pic img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.post__comments-user {
+    width: 40%;
+    padding: 10px;
+}
+
+.post__comments-user-name {
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #aaa;
+}
+
+.post__comments-text span {
+    font-size: 14px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+#comments ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+

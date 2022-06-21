@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobil.css">
+    <script src="src/script.js"></script>
+    <script src="src/posts.js"></script>
+    <title>instagram</title>
+</head>
+
+<body onload="renderPosts()" class="bgc-gray">
+    <header>
+        <div class="header__logo">
+            <img src="img/instagram.png" alt="log instagram">
+        </div>
+
+        <input type="text" placeholder="Suchen">
+
+        <div class="header__icons">
+            <img src="img/home.png" alt="">
+            <img src="img/arrow.png" alt="">
+            <img src="img/post.png" alt="">
+            <img src="img/heart.png" alt="">
+            <img src="img/user.png" alt="">
+        </div>
+
+    </header>
+
+    <main>
+        <div class="user-account">
+            <div class="user-account__info">
+                <img src="/img/user.png" alt="">
+                <span>user_account_name</span>
+                <p>Vorschläge für dich:</p>
+            </div>
+
+            <div id="recommend"></div>
+        </div>
+
+        <div id="posts">
+
+        </div>
+    </main>
+
+</body>
+
+</html>
